@@ -1,0 +1,137 @@
+/* Main Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    color: #2b2a35;
+}
+
+@font-face {
+    font-family: 'Playfair Display', serif;
+    src: url(PlayfairDisplay-Regular.ttf);
+}
+
+.header-text {
+    font-family: 'Playfair Display', serif;
+}
+
+.header-big-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.4rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+/* Utilities */
+.bd {
+    border: 1px solid sienna;
+}
+
+.w-90 {
+    width: 92%;
+    font-size: 1.11rem;
+}
+
+.center {
+    margin: auto;
+}
+
+.side-padding {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.mt-16 {
+    margin-top: 16.5rem;
+}
+
+.mt-6 {
+    margin-top: 3.5rem;
+}
+
+.pt-2-5 {
+    padding-top: .8rem;
+}
+
+.pl-6 {
+    padding-left: 3.5rem !important;
+}
+
+.text-color {
+    color: #2b2a35;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.text-color:hover:not(.purple) {
+    text-decoration: none;  
+    color: #7552f6;
+    opacity: .9;
+}
+
+.purple {    
+    color: #7552f6;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.purple:hover {
+    text-decoration: none;
+    color: #7552f6;
+}
+
+.btn-outline-purple {
+    border: 1px solid #7552f6;
+    color: #7552f6;
+    font-size: 1.1rem;
+    padding: .7rem 1.7rem .75rem 1.7rem;
+    border-radius: 30px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.btn-outline-purple:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7552f6;
+}
+
+.btn-purple {
+    border: 1px solid #7552f6;
+    background-color: #7552f6;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: .7rem 1.6rem .75rem 1.6rem;
+    border-radius: 30px;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.btn-purple:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: .7;
+}
+
+.btn-purple1 {
+    border: 1px solid #7552f6;
+    background-color: #7552f6;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: .7rem 2.4rem .75rem 2.4rem;
+    border-radius: 30px;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.btn-purple1:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: .7;
+}
+
+/* Responsive */
