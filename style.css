@@ -29,6 +29,73 @@ body {
     line-height: 1.35;
 }
 
+.links {
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.press-images a {
+    margin-right: 3rem;
+}
+
+.press-images a:last-child {
+    margin-right: 0;
+}
+
+.cards-container {
+    display: flex;
+    height: 82vh;
+    text-align: center;
+}
+
+.card-image {
+    align-self: center;
+    width: 190px;
+}
+
+.card-h {
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.card-para {
+    width: 57%;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    opacity: .8;
+    line-height: 1.6;
+}
+
+.card-box {
+    border: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 12px 0 #eaeaea;
+}
+
+/* How it works */
+.how-it-works {
+    position: relative;
+    width: 100%;    
+    overflow: hidden;
+}
+
+/* .how-it-works::before {
+    content: "";
+    position: absolute;
+    background-image: url(images/mine-menu-garnish.jpg);
+    width: 40%;
+    height: 100%;
+    top: 20%;
+    left: 65%;
+    z-index: 1;
+} */
+
+.garnish-image {
+    position: absolute;
+    left: 68%;
+}
+
 /* Utilities */
 .bd {
     border: 1px solid sienna;
@@ -52,8 +119,20 @@ body {
     margin-top: 16.5rem;
 }
 
+.mt-9 {
+    margin-top: 9rem;
+}
+
+.mt-7 {
+    margin-top: 7.5rem;
+}
+
 .mt-6 {
-    margin-top: 3.5rem;
+    margin-top: 6rem;
+}
+
+.mt-4-6 {
+    margin-top: 4.6rem;
 }
 
 .pt-2-5 {
@@ -62,6 +141,11 @@ body {
 
 .pl-6 {
     padding-left: 3.5rem !important;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .text-color {
@@ -132,6 +216,26 @@ body {
     text-decoration: none;
     color: #fff;
     opacity: .7;
+}
+
+.opacity {
+    opacity: .4;    
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.big-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.35;
+    max-width: 500px;
+}
+
+.small-text {
+    font-size: 1.1rem;
+    max-width: 480px;
+    margin-top: 2.1rem;
 }
 
 /* Responsive */
