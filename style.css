@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --purpleColor: #7552f6;
+}
+
 html {
     font-family: "Lato", sans-serif;
 }
@@ -143,6 +147,10 @@ body {
     padding-left: 3.5rem !important;
 }
 
+.pl-4-5 {
+    padding-left: 2rem;
+}
+
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -150,7 +158,6 @@ body {
 
 .text-color {
     color: #2b2a35;
-    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -162,7 +169,6 @@ body {
 
 .purple {    
     color: #7552f6;
-    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -174,7 +180,6 @@ body {
 .btn-outline-purple {
     border: 1px solid #7552f6;
     color: #7552f6;
-    font-size: 1.1rem;
     padding: .7rem 1.7rem .75rem 1.7rem;
     border-radius: 30px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -190,7 +195,6 @@ body {
     border: 1px solid #7552f6;
     background-color: #7552f6;
     color: #fff;
-    font-size: 1.1rem;
     padding: .7rem 1.6rem .75rem 1.6rem;
     border-radius: 30px;
     transition: opacity 0.15s ease-in-out;
@@ -203,10 +207,9 @@ body {
 }
 
 .btn-purple1 {
-    border: 1px solid #7552f6;
-    background-color: #7552f6;
+    border: 1px solid var(--purpleColor);
+    background-color: var(--purpleColor);
     color: #fff;
-    font-size: 1.1rem;
     padding: .7rem 2.4rem .75rem 2.4rem;
     border-radius: 30px;
     transition: opacity 0.15s ease-in-out;
@@ -233,9 +236,46 @@ body {
 }
 
 .small-text {
-    font-size: 1.1rem;
     max-width: 480px;
     margin-top: 2.1rem;
 }
 
+.border-purple {
+    border-left: 3px solid var(--purpleColor);
+}
+
+.border-black {
+    border-left: 1px solid #959595;
+    opacity: .3;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+input:onclick {
+    display: none;
+}
+
+.light, .bold {
+    font-size: 1.28rem;
+}
+
+.light {
+    font-weight: normal!important;
+}
+
+.h7,
+.small-text,
+.btn-purple,
+.btn-outline-purple,
+.btn-purple1,
+.purple,
+.text-color {
+    font-size: 1.1rem;
+}
+
+.h7 {
+    color: rgba(43,42,53,.8);
+}
 /* Responsive */
