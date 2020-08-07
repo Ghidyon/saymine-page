@@ -103,6 +103,7 @@ body {
 .border-black {
     border-left: 1px solid #959595;
     position: relative;
+    opacity: .3;
 }
 
 .border-black::before {
@@ -111,11 +112,39 @@ body {
     position: absolute;
     width: 3px;
     height: 100%;
-    left: 0;
+    left: -2px;
     background-color: var(--purpleColor);
     border-radius: 5px;
     transform-origin: top;
-    transition: all .3s ease;
+    transition: all .7s ease;
+}
+
+.padded-bottom {
+    padding-bottom: 2rem;
+}
+
+.padded-top {
+    padding-top: 1.5rem;
+}
+
+.padded {
+    padding-bottom: 2rem;
+}
+
+.h7 {
+    display: none;
+}
+
+#data1, #data2, #data3 {
+    display: none;
+}
+
+#data1:checked + .border-black,
+#data2:checked + .border-black,
+#data3:checked + .border-black {
+    opacity: 1;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 #data1:checked + .border-black::before,
@@ -123,6 +152,29 @@ body {
 #data3:checked + .border-black::before {
     display: inline;
     transform: scaleY(1);
+}
+
+#data1:checked + .border-black .h7,
+#data2:checked + .border-black .h7,
+#data3:checked + .border-black .h7 {
+    display: block;    
+    color: rgba(43,42,53,.8);
+}
+
+#data1:checked + .border-black .weight,
+#data2:checked + .border-black .weight,
+#data3:checked + .border-black .weight {
+    font-weight: 600;
+}
+
+#data1:checked ~ .padded {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+
+#data3:checked + .padded-bottom {
+    padding-bottom: 0rem;
 }
 
 
@@ -270,16 +322,9 @@ body {
     border-left: 3px solid var(--purpleColor);
 }
 
-.bold {
-    font-weight: 600;
-}
-
-.light, .bold {
+.weight {
     font-size: 1.28rem;
-}
-
-.light {
-    font-weight: normal !important;
+    font-weight: normal;
 }
 
 .h7,
