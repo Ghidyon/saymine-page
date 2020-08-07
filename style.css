@@ -100,6 +100,32 @@ body {
     left: 68%;
 }
 
+.border-black {
+    border-left: 1px solid #959595;
+    position: relative;
+}
+
+.border-black::before {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    background-color: var(--purpleColor);
+    border-radius: 5px;
+    transform-origin: top;
+    transition: all .3s ease;
+}
+
+#data1:checked + .border-black::before,
+#data2:checked + .border-black:before,
+#data3:checked + .border-black::before {
+    display: inline;
+    transform: scaleY(1);
+}
+
+
 /* Utilities */
 .bd {
     border: 1px solid sienna;
@@ -244,17 +270,8 @@ body {
     border-left: 3px solid var(--purpleColor);
 }
 
-.border-black {
-    border-left: 1px solid #959595;
-    opacity: .3;
-}
-
 .bold {
     font-weight: 600;
-}
-
-input:onclick {
-    display: none;
 }
 
 .light, .bold {
@@ -262,7 +279,7 @@ input:onclick {
 }
 
 .light {
-    font-weight: normal!important;
+    font-weight: normal !important;
 }
 
 .h7,
