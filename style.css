@@ -9,6 +9,14 @@
     --purpleColor: #7552f6;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: rgb(255, 243, 210);
+}
+
 html {
     font-family: "Lato", sans-serif;
 }
@@ -77,59 +85,45 @@ body {
     box-shadow: 0 2px 12px 0 #eaeaea;
 }
 
-/* How it works */
+/* How it works section */
 .how-it-works {
     position: relative;
     width: 100%;    
     overflow: hidden;
 }
 
-/* .how-it-works::before {
-    content: "";
-    position: absolute;
-    background-image: url(images/mine-menu-garnish.jpg);
-    width: 40%;
-    height: 100%;
-    top: 20%;
-    left: 65%;
-    z-index: 1;
-} */
-
 .garnish-image {
     position: absolute;
     left: 68%;
 }
 
+/* Data section */
 .border-black {
-    border-left: 1px solid #959595;
+    border-left: 1px solid #afafaf;
     position: relative;
-    opacity: .3;
+    opacity: .3;    
+    overflow-y: hidden;
 }
 
 .padded-bottom {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .padded-top {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 
 .padded {
     padding-bottom: 2rem;
 }
 
-.h7 {
-    display: none;
-}
-
 .border-black::before {
-    display: none;
     content: "";
     display: block;
     position: absolute;
     width: 3px;
     height: 100%;
-    left: -2px;
+    left: -1px;
     background-color: var(--purpleColor);
     border-radius: 5px;
     transform: scaleY(0);
@@ -147,6 +141,7 @@ body {
     opacity: 1;
     padding-bottom: 0;
     padding-top: 0;
+    border-left: 0;
 }
 
 #data1:checked + .border-black::before,
@@ -159,11 +154,29 @@ body {
     color: rgba(43,42,53,.8);
 }
 
-#data1:checked + .border-black .h7,
-#data2:checked + .border-black .h7,
-#data3:checked + .border-black .h7 {
-    display: block;    
-    color: rgba(43,42,53,.8);
+.changeheight1, .changeheight2, .changeheight3 {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transform-origin: top;
+    transition: all .6s ease;
+}
+
+.changeheight3 {
+    margin-bottom: 0rem;
+}
+
+#data1:checked + .border-black .changeheight1 {
+    height: 55px;
+    margin-bottom: 0rem;
+}
+
+#data2:checked + .border-black .changeheight2 {
+    height: 80px;
+    margin-bottom: 0rem;
+}
+#data3:checked + .border-black .changeheight3 {
+    height: 55px;
 }
 
 #data1:checked + .border-black .weight,
@@ -173,9 +186,12 @@ body {
 }
 
 #data1:checked ~ .padded {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: .5rem;
+}
 
+#data2:checked ~ .padded-top {
+    padding-top: 2.5rem;
 }
 
 #data3:checked + .padded-bottom {
