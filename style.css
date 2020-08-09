@@ -273,7 +273,7 @@ body {
 /* Frames Section */
 .frames {
     height: 700px;
-    padding: 7rem 0;
+    padding: 7rem 0 50rem 0;
 }
 
 .frame-container {
@@ -289,6 +289,20 @@ body {
 .frame {
     flex-grow: 1!important;
     display: block;
+}
+
+/* Verified Section */
+.verified {
+    display: grid;
+    grid-template-columns: .4fr .4fr;
+    place-content: center;    
+    background-color: #f9f9f9;
+    padding: 6rem 0;
+}
+
+.verified-text {
+    width: 340px;
+    color: rgba(43,42,53,.8);
 }
 /* Utilities */
 .bd {
@@ -312,6 +326,10 @@ body {
     padding-right: 2rem !important;
 }
 
+.mr-3-5 {
+    margin-right: 2rem;
+}
+
 .mt-16 {
     margin-top: 16.5rem;
 }
@@ -330,6 +348,10 @@ body {
 
 .mt-4-6 {
     margin-top: 4.6rem;
+}
+
+.mb-4-5 {
+    margin-bottom: 2rem;
 }
 
 .pt-2-5 {
@@ -437,7 +459,7 @@ body {
 }
 
 .border-purple {
-    border-left: 3px solid var(--purpleColor);
+    border-left: 2px solid var(--purpleColor);
 }
 
 .weight {
@@ -453,7 +475,8 @@ body {
 .btn-purple1,
 .purple,
 .text-color,
-.stats-text {
+.stats-text,
+.verified-text {
     font-size: 1.1rem;
 }
 
@@ -480,6 +503,10 @@ body {
 .text-purple {
     color: var(--purpleColor);
     font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* Responsive */
