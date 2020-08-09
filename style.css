@@ -304,6 +304,22 @@ body {
     width: 340px;
     color: rgba(43,42,53,.8);
 }
+
+/* Unleash Section */
+.unleash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    column-gap: 2rem;
+    padding: 13rem 0;
+}
+
+.unleash-image {
+    width: 400px;
+    padding-left: 6rem;
+    padding-top: 3.5rem;
+    overflow: hidden;
+}
 /* Utilities */
 .bd {
     border: 1px solid sienna;
@@ -350,8 +366,16 @@ body {
     margin-top: 4.6rem;
 }
 
+.mt-4-5 {
+    margin-top: 2.7rem;
+}
+
 .mb-4-5 {
     margin-bottom: 2rem;
+}
+
+.mt-2-1 {
+    margin-top: 2.1rem;
 }
 
 .pt-2-5 {
@@ -378,12 +402,12 @@ body {
 
 .text-color:hover:not(.purple) {
     text-decoration: none;  
-    color: #7552f6;
+    color: var(--purpleColor);
     opacity: .9;
 }
 
 .purple {    
-    color: #7552f6;
+    color: var(--purpleColor);
     font-weight: 600;
 }
 
@@ -393,8 +417,8 @@ body {
 }
 
 .btn-outline-purple {
-    border: 1px solid #7552f6;
-    color: #7552f6;
+    border: 1px solid var(--purpleColor);
+    color: var(--purpleColor);
     padding: .7rem 1.7rem .75rem 1.7rem;
     border-radius: 30px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -403,34 +427,28 @@ body {
 .btn-outline-purple:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #7552f6;
+    background-color: var(--purpleColor);
 }
 
-.btn-purple {
-    border: 1px solid #7552f6;
-    background-color: #7552f6;
+.btn-purple, .btn-purple1, .btn-purple2 {
+    border: 1px solid var(--purpleColor);
+    background-color: var(--purpleColor);
     color: #fff;
     padding: .7rem 1.6rem .75rem 1.6rem;
     border-radius: 30px;
     transition: opacity 0.15s ease-in-out;
 }
 
-.btn-purple:hover {
-    text-decoration: none;
-    color: #fff;
-    opacity: .7;
-}
-
 .btn-purple1 {
-    border: 1px solid var(--purpleColor);
-    background-color: var(--purpleColor);
-    color: #fff;
     padding: .7rem 2.4rem .75rem 2.4rem;
-    border-radius: 30px;
-    transition: opacity 0.15s ease-in-out;
 }
 
-.btn-purple1:hover {
+.btn-purple2 {
+    padding: .9rem 3rem .9rem 3rem;
+    font-size: 1.2rem;
+}
+
+.btn-purple:hover, .btn-purple1:hover, .btn-purple2:hover {
     text-decoration: none;
     color: #fff;
     opacity: .7;
@@ -455,7 +473,6 @@ body {
 
 .small-text {
     max-width: 480px;
-    margin-top: 2.1rem;
 }
 
 .border-purple {
