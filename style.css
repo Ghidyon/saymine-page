@@ -234,13 +234,62 @@ body {
 }
 
 /* Awards Section */
-.awards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    row-gap: 2rem;
+.discover {
+    margin-top: 15rem;
 }
 
+.awards {
+    width: 60%;
+    margin: 3rem auto
+}
+
+.award {
+    margin-bottom: 1.5rem;
+    margin-left: .65rem;
+    margin-right: .65rem;
+    padding: .8rem 2rem .7rem 1.2rem; 
+}
+
+/* Statistics Section */
+.statistics {
+    display: grid;
+    grid-template-columns: .25fr .25fr .25fr;
+    place-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.bold-text {
+    font-family: Lora, serif;
+    font-size: 3.3rem;   
+}
+
+.stats-text {
+    width: 10.5rem;
+    line-height: 1.4;
+}
+
+/* Frames Section */
+.frames {
+    height: 700px;
+    padding: 7rem 0;
+}
+
+.frame-container {
+    width: 550px;
+    height: 700px;
+}
+
+.frame-container2 {
+    width: 550px;
+    height: 730px;
+}
+
+.frame {
+    flex-grow: 1!important;
+    display: block;
+}
 /* Utilities */
 .bd {
     border: 1px solid sienna;
@@ -381,6 +430,7 @@ body {
     line-height: 1.35;
     max-width: 500px;
 }
+
 .small-text {
     max-width: 480px;
     margin-top: 2.1rem;
@@ -402,10 +452,34 @@ body {
 .btn-outline-purple,
 .btn-purple1,
 .purple,
-.text-color {
+.text-color,
+.stats-text {
     font-size: 1.1rem;
 }
 
-/* rgb(227, 193, 1); */
+.left-align {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.bg-award {
+    color: rgb(227, 193, 1);
+    font-size: 1.8rem;
+    margin-top: .05rem;    
+}
+
+.mini-text {
+    font-size: .7rem !important;
+}
+
+.border-gray {
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+}
+
+.text-purple {
+    color: var(--purpleColor);
+    font-size: 1.1rem;
+}
 
 /* Responsive */
