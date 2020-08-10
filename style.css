@@ -30,6 +30,10 @@ body {
     src: url(PlayfairDisplay-Regular.ttf);
 }
 
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
 .header-text {
     font-family: 'Playfair Display', serif;
 }
@@ -320,6 +324,53 @@ body {
     padding-top: 3.5rem;
     overflow: hidden;
 }
+
+/* Footer */
+.footer {
+    background-color: #2b2a35;
+    color: #fff;
+}
+
+.footer-container {
+    padding: 5.5rem 8rem;
+}
+
+.footer-title {
+    opacity: .5;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    font-size: 1.12rem;
+}
+
+.footer-links li {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-f {
+    padding: 2.5rem 8rem;
+}
+
+.footer-f p {
+    font-size: 1.12rem;
+}
+
+.footer-icons {
+    font-size: 1.8rem;
+}
+
+.footer-icons a {
+    margin-left: 2rem;
+}
+
+.footer-icons a:first-child {
+    margin-left: 0;
+}
 /* Utilities */
 .bd {
     border: 1px solid sienna;
@@ -340,6 +391,14 @@ body {
 .side-padding {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+}
+
+.mr-12 {
+    margin-right: 11rem;
+}
+
+.mr-6 {
+    margin-right: 7rem;
 }
 
 .mr-3-5 {
@@ -418,7 +477,7 @@ body {
 
 .btn-outline-purple {
     border: 1px solid var(--purpleColor);
-    color: var(--purpleColor);
+    color: var(--purpleColor) !important;
     padding: .7rem 1.7rem .75rem 1.7rem;
     border-radius: 30px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
