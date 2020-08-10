@@ -32,8 +32,8 @@ body {
 
 a {
     text-decoration: none !important;
-    color: #fff !important;
 }
+
 .header-text {
     font-family: 'Playfair Display', serif;
 }
@@ -352,6 +352,10 @@ a {
     margin-bottom: 0;
 }
 
+.footer-links a {
+    color: #fff !important;
+}
+
 .footer-f {
     padding: 2.5rem 8rem;
 }
@@ -366,6 +370,7 @@ a {
 
 .footer-icons a {
     margin-left: 2rem;
+    color: #fff !important;
 }
 
 .footer-icons a:first-child {
@@ -586,3 +591,8 @@ a {
 }
 
 /* Responsive */
+@media screen and (min-width:1441px) {
+    .container-fluid {
+        width: 1440px !important;
+    }
+}
