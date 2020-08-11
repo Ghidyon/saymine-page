@@ -74,7 +74,6 @@ a {
 
 .card-h {
     font-family: "Playfair Display", serif;
-    font-size: 2.2rem;
     font-weight: 700;
 }
 
@@ -98,11 +97,6 @@ a {
     position: relative;
     width: 100%;    
     overflow: hidden;
-}
-
-.garnish-image {
-    position: absolute;
-    left: 68%;
 }
 
 /* Data section */
@@ -246,7 +240,7 @@ a {
 
 .awards {
     width: 60%;
-    margin: 3rem auto
+    margin: 3rem auto;
 }
 
 .award {
@@ -282,8 +276,7 @@ a {
 
 /* Frames Section */
 .frames {
-    height: 700px;
-    padding: 7rem 0 50rem 0;
+    height: 200vh;
 }
 
 .frame-container {
@@ -468,11 +461,6 @@ a {
 
 .pl-4-5 {
     padding-left: 2rem;
-}
-
-.py-6 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
 }
 
 .text-color {
@@ -699,7 +687,7 @@ a {
 
     .header-big-text {
         font-family: 'Playfair Display', serif;
-        font-size: 5.4rem;
+        font-size: 2.9rem;
         font-weight: 700;
         line-height: 1.35;
     }
@@ -718,11 +706,89 @@ a {
     }
 
     .cards-container {
-        height: 80vh;
+        height: 90vh;
     }
 
     .card-box {
+        width: 370px;        
+    }
 
+    .card-h {
+        font-size: 1.4rem;
+    }
+
+    .card-para {
+        width: 80%;
+        font-size:1.1rem;
+    }
+
+    .mt-12 {
+        margin-top: 15rem;
+        margin-left: 7rem;
+    }
+
+    .garnish-image {
+        position: absolute;
+        left: 48%;
+    }
+
+    .garnish-image > img {
+        width: 75%;
+    }
+
+    .big-text1 {
+        font-size: 2.4rem;
+    }
+
+    .awards {
+        width: 75%;
+        margin: 3rem auto;
+    }
+
+    .award {
+        padding: .85rem 2rem .75rem 1.2rem; 
+    }
+
+    .bg-award {
+        font-size: 1.6rem;
+    }
+
+    .mini-text {
+        font-size: .59rem !important;
+    }
+
+    .text-purple {
+        font-size: 1rem;
+    }
+
+    .statistics > div {
+        margin-right: 2.5rem;
+    }
+
+    .bold-text {
+        font-size: 2.3rem;   
+    }
+
+    .stats-text {
+        font-size: 1rem;
+        width: 9.5rem;
+    }
+
+    .frames {
+        height: 250vh;
+        flex-direction: column;
+        align-items: center;
+        margin: 3.5rem 0;
+    }
+
+    .frame-container {
+        width: 500px;
+        height: 615px;
+    }
+
+    .frame-container2 {
+        width: 500px;
+        height: 670px;
     }
 }
 
@@ -731,13 +797,48 @@ a {
         display: none;
     }
 
-    .card-box {
-        width: 400px;        
+    .pl-6 {
+        width: 100%;
+        align-self: center;
     }
 
+    .pl-6 > img {
+        height: 70vh;
+    }
+
+    .header-text {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .header-big-text {
+        font-size: 3rem;
+        width: 400px;
+        padding-bottom: 1.3rem;
+    }
+
+    .py-6 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 
     
-    
+    .frames {
+        height: 250vh;
+        flex-direction: column;
+        align-items: center;
+        margin: 3.5rem 0;
+    }
+
+    .frame-container {
+        width: 500px;
+        height: 615px;
+    }
+
+    .frame-container2 {
+        width: 500px;
+        height: 670px;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -749,12 +850,69 @@ a {
         margin-right: 0;
     }
 
+    .py-6 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
     .cards-container {
-    height: 122vh;
+        height: 125vh;
     }
 
     .card-box {
         width: 500px;        
+    }
+
+    .card-h {
+        font-size: 2.2rem;
+    }
+
+    .mt-12 {
+        margin-top: 4.6rem;
+    }
+     
+    .garnish-image {
+        position: absolute;
+        left: 68%;
+    }
+
+    .awards {
+        width: 60%;
+        margin: 3rem auto;
+    }
+
+    .award {
+        padding: .8rem 2rem .7rem 1.2rem; 
+    }
+
+    .bg-award {
+        font-size: 1.8rem;
+        margin-top: .05rem;    
+    }
+
+    .mini-text {
+        font-size: .7rem !important;
+    }
+
+    .text-purple {
+        font-size: 1.1rem;
+    }
+
+    .statistics > div {
+        margin-right: 2rem;
+    }
+
+    .bold-text {
+       font-size: 3.3rem;   
+    }
+    
+    .stats-text {
+        font-size: 1.1rem;
+    }
+
+    .frames {
+        height: 700px;
+        padding: 7rem 0 50rem 0;
     }
 }
 
@@ -762,6 +920,7 @@ a {
     .container-fluid {
         width: 1440px !important;
     }
+
     .cards-container {
         height: 105vh;
         }
