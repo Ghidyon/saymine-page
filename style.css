@@ -41,7 +41,6 @@ a {
 
 .header-big-text {
     font-family: 'Playfair Display', serif;
-    font-size: 3.6rem;
     font-weight: 700;
     line-height: 1.35;
 }
@@ -408,9 +407,7 @@ a {
     margin-right: 2rem;
 }
 
-/* .mt-16 {
-    margin-top: 5rem;
-} */
+/*  */
 
 .mt-9 {
     margin-top: 9rem;
@@ -664,28 +661,42 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .mt-16 {
+        margin-top: 6rem !important;
+    }
+
     .pd-top {
+        margin-top: 3.5rem;
     }
     
-    .pl-6 {
-        width: 400px;
-    }
-
-    .pl-6 > img {
-        height: 300px;
-    }
-
     .pt-2-5 {
         padding-top: 0rem;
     }
 
     .header-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding-bottom: 0;
     }
 
+    .header-big-text {
+        font-size: 2.7rem;
+        width: 350px;
+    }
+
     .w-90 {
-        width: 310px;
+        width: 100%;
+    }
+
+    .top-pd {
+        margin-top: 4.5rem;
+    }
+
+    .pl-6 {
+        width: 400px;
+    }
+
+    .pl-6 > img {
+        height: 400px;
     }
 
     .ostrich-tablet {
@@ -698,6 +709,10 @@ a {
 
     .ostrich-mobile {
         display: none;
+    }
+
+    .press-images a {
+        margin-right: 1rem;
     }
 
     .d-breakout {
@@ -758,6 +773,10 @@ a {
         margin-top: 7.5rem!important;
     }
 
+    .pd-top {
+        margin: 0;
+    }
+
     .header-container {
         margin-left: 6rem;
     }
@@ -769,8 +788,6 @@ a {
     .header-big-text {
         font-family: 'Playfair Display', serif;
         font-size: 2.9rem;
-        font-weight: 700;
-        line-height: 1.35;
         width: 400px;
     }
 
@@ -1044,11 +1061,7 @@ a {
     }
 
     .press-images a {
-    margin-right: 3rem;
-    }
-
-    .press-images a:last-child {
-        margin-right: 0;
+        margin-right: 3rem;
     }
 
     .py-6 {
