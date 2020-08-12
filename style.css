@@ -94,7 +94,6 @@ a {
 }
 
 .card-para {
-    width: 57%;
     font-size: 1.1rem;
     margin: 0 auto;
     opacity: .8;
@@ -759,6 +758,10 @@ a {
         margin-top: 7.5rem!important;
     }
 
+    .header-container {
+        margin-left: 6rem;
+    }
+
     .header-text {
         font-size: 1.2rem;
     }
@@ -808,13 +811,17 @@ a {
         width: 370px;        
     }
 
+    .py-6 {
+        padding: 1rem 0;
+    }
+
     .card-h {
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
     }
 
     .card-para {
         width: 80%;
-        font-size:1.1rem;
+        font-size: 1.1rem !important;
     }
 
     .mt-12 {
@@ -1058,7 +1065,11 @@ a {
     }
 
     .card-h {
-        font-size: 2.2rem;
+        font-size: 2.2rem !important;
+    }
+
+    .card-para {
+        width: 310px;
     }
 
     .mt-12 {
