@@ -46,6 +46,18 @@ a {
     line-height: 1.35;
 }
 
+.ostrich-desktop {
+    display: none;
+}
+
+.ostrich-tablet {
+    display: none;
+}
+
+.ostrich-mobile {
+    display: block;
+}
+
 /* Links Section */
 .links {
     margin-top: 7.5rem;
@@ -566,19 +578,31 @@ a {
     .pad-top {
         width: 80%;
     }
-    .pl-6 {
+    /* .pl-6 {
         width: 20%;
-        margin-left: -15rem!important;  
-        padding-left: 0 !important;
+        margin-left: -15rem;  
+        padding-left: 0;
     }
 
     .pl-6 > img {
-        width: 100%!important;
-        max-height: 200px !important;
-    }
+        width: 100%;
+        max-height: 200px;
+    } */
 
     .w-90 {
-        width: 180px !important;
+        width: 180px;
+    }
+
+    .ostrich-desktop{ 
+        display: none;
+    }
+
+    .ostrich-tablet {
+        display: block;
+    }
+
+    .ostrich-mobile {
+        display: none;
     }
 
     .d-breakout {
@@ -634,17 +658,18 @@ a {
     .footer-icons a {
         margin-left: 1rem;
     }
+
+    .mg-y {
+        margin: 4.5rem 0 0 0;
+    }    
 }
 
 @media screen and (min-width: 768px) {
     .pd-top {
-        padding-top: 3rem !important;
     }
     
     .pl-6 {
-        margin-left: -15rem;
-        width: 400px !important;
-        padding-left: 0rem !important;
+        width: 400px;
     }
 
     .pl-6 > img {
@@ -656,18 +681,24 @@ a {
     }
 
     .header-text {
-        font-size: 1rem !important;
-        padding-bottom: 0 !important;
-    }
-
-    .header-big-text {
-        font-size: 2rem !important;
-        width: 250px !important;
-        padding-bottom: 0 !important;
+        font-size: 1rem;
+        padding-bottom: 0;
     }
 
     .w-90 {
-        width: 310px !important;
+        width: 310px;
+    }
+
+    .ostrich-tablet {
+        display: block;
+    }
+
+    .ostrich-desktop {
+        display: none;
+    }
+
+    .ostrich-mobile {
+        display: none;
     }
 
     .d-breakout {
@@ -717,57 +748,19 @@ a {
         border: none;
         padding: 0;
     }
+
+    .mg-y {
+        margin: 0;
+    }
 }
 
-/* @media screen and (max-width: 991px) {
-    .header-text {
-        font-size: 1.3rem;
-        padding-bottom: 1rem;
-    }
-
-    .header-big-text {
-        font-size: 2.9rem;
-        width: 400px;
-        padding-bottom: 1.3rem;
-    }
-
-    .top-pd {
-        margin-top: 2.5rem;
-    }
-
-    .mt-16 {
-        margin-top: 5.5rem ;
-    }
-
-    .pd-top {
-        padding-top: 6rem;
-    }
-    
-    .pl-6 {
-        padding-left: 8rem !important;
-    }    
-
-    .w-90 {
-        width: 100%;
-        font-size: 1rem;
-    }
-    
-    .d-breakout {
-        display: none;
-    }
-
-    .unleash-breakout {
-        display: none;
-    }
-} */
-
 @media screen and (min-width: 992px) {
-    .header-container {
-        margin-left: 6rem;
+    .mt-16 {
+        margin-top: 7.5rem!important;
     }
 
     .header-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .header-big-text {
@@ -775,29 +768,32 @@ a {
         font-size: 2.9rem;
         font-weight: 700;
         line-height: 1.35;
+        width: 400px;
     }
 
     .top-pd {
         margin-top: 2.5rem;
     }
 
-    .mt-16 {
-        margin-top: 16.5rem;
-    }
-
-    .pl-6 {
-        padding-left: 3.5rem !important;
-        align-self: start;     
-    }
-
     .pl-6 > img {
-        width: 100%;
         height: 350px; 
     }
     
     .w-90 {
         width: 100%;
         font-size: 1.11rem;
+    }
+    
+    .ostrich-tablet {
+        display: block;
+    }
+
+    .ostrich-desktop {
+        display: none;
+    }
+
+    .ostrich-mobile {
+        display: none;
     }
 
     .values {
@@ -823,7 +819,6 @@ a {
 
     .mt-12 {
         margin-top: 15rem;
-        /* margin-left: 7rem; */
     }
 
     .garnish-image {
@@ -990,23 +985,47 @@ a {
 }
 
 @media screen and (min-width: 1025px) {
+    .mt-16 {
+        margin-top: 19.5rem !important;
+    }
+
     .header-container {
         margin-left: 0;
     }
 
     .header-big-text {
-        font-size: 4.7rem !important;
-        width: 100% !important;
-        padding-bottom: 0 !important;
+        font-size: 4.7rem;
+        width: 100%;
+        padding-bottom: 0;
     }
 
     .top-pd {
         margin-top: 2.5rem;
     }
 
+    .w-90 {
+        width: 100%;
+    }
+
+    .pl-6 {
+        padding-top: 1rem;
+    }
+
     .pl-6 > img {
         width: 100%;
         height: 400px;
+    }
+
+    .ostrich-desktop {
+        display: block;
+    }
+
+    .ostrich-tablet {
+        display: none;
+    }
+
+    .ostrich-mobile {
+        display: none;
     }
 
     .values {
