@@ -74,11 +74,11 @@ a {
     display: none;
 }
 
-.press-images a {
+.press-link {
     margin-right: .5rem;
 }
 
-.press-images a:last-child {
+.press-link:last-child {
     margin-right: 0;
 }
 
@@ -727,33 +727,38 @@ a {
         display: none;
     }
 
+    .press-link {
+        margin-right: 2rem;
+    }
+
     .intel {
         width: 60px;
     }
 
     .business {
-        width: 80px;
+        width: 100px;
     }
 
     .venture {
-        width: 100px;
+        width: 120px;
     }
     
-
-    .big-text {
-        font-size: 2.5rem;
-        line-height: 1.35;
-        max-width: 350px;
+    .values {
+        width: 350px;
     }
 
+    .big-text {
+        font-size: 2rem;
+        line-height: 1.35;
+        width: 330px;
+    }    
+
     .small-text {
-        font-size: 1.2rem;
-        max-width: 400px;
+        font-size: 1rem;
     }
 
     .cards-container {
         flex-direction: column;
-        /* height: auto; */
     }
 
     .side-padding {
@@ -762,12 +767,12 @@ a {
     }
 
     .card-box {
-        width: 300px;        
+        width: 350px;        
     }
 
     .card-image {
         align-self: center;
-        width: 190px;
+        width: 160px;
     }
 
     .py-6 {
@@ -775,28 +780,39 @@ a {
     }
 
     .card-h {
-        font-size: 1.4rem !important;
+        font-size: 1.15rem !important;
     }
 
     .card-para {
-        width: 80%;
-        font-size: 1.1rem !important;
+        width: 90%;
+        font-size: 1rem !important;
     }
     
-
     .mt-12 {
         margin-top: 15rem;
     }
 
+    .how-it-works {
+        position: relative;
+        width: 350px;    
+        overflow: visible;
+    }
+
     .garnish-image {
         position: absolute;
-        left: 48%;
+        left: 25%;
+        top: 5px;
+        width: 280px;
     }
 
     .garnish-image > img {
         width: 100%;
     }
-   
+
+    .opacity {        
+        font-size: .8rem;
+    }
+
     .big-text1 {
         font-size: 2.4rem;
     }
@@ -805,6 +821,9 @@ a {
         margin-top: 7rem;
     }
 
+    .click-container {
+        width: 350px;
+    }
     .awards {
         width: 75%;
         margin: 3rem auto;
@@ -1065,12 +1084,32 @@ a {
         display: none;
     }
 
-    .press-images a {
-        margin-right: 1.3rem;
+    .press-link {
+        margin-right: 3.5rem;
+    }
+
+    .intel {
+        width: 70px;
+    }
+
+    .business {
+        width: 110px;
+    }
+
+    .venture {
+        width: 180px;
+    }
+
+    .fast {
+        width: 135px;
     }
 
     .d-breakout {
         display: none;
+    }
+
+    .values {
+        width: 100%;
     }
 
     .big-text {
@@ -1120,15 +1159,26 @@ a {
         margin-top: 15rem;
     }
 
+    .how-it-works {
+        position: relative;
+        width: 100%;    
+        overflow: hidden;
+    }
+
     .garnish-image {
         position: absolute;
         left: 48%;
+        top: 0;
     }
 
     .garnish-image > img {
         width: 100%;
     }
    
+    .opacity {
+        font-size: 1.1rem;
+    }
+
     .big-text1 {
         font-size: 2.4rem;
     }
@@ -1137,6 +1187,10 @@ a {
         margin-top: 7rem;
     }
 
+    .click-container {
+        width: 100%;
+    }
+    
     .awards {
         width: 75%;
         margin: 3rem auto;
@@ -1412,7 +1466,8 @@ a {
 
     .garnish-image {
         position: absolute;
-        left: 48%;
+        left: 52%;
+        width: 500px;
     }
 
     .garnish-image > img {
@@ -1622,8 +1677,24 @@ a {
         display: block;
     }
 
-    .press-images a {
+    .press-link {
         margin-right: 3rem;
+    }
+
+    .business {
+        width: 120px;
+    }
+
+    .venture {
+        width: 185px;
+    }
+
+    .evening {
+        width: 180px;
+    }
+
+    .fast {
+        width: 145px;
     }
 
     .py-6 {
@@ -1653,7 +1724,12 @@ a {
      
     .garnish-image {
         position: absolute;
-        left: 68%;
+        left: 55%;
+        width: 600px;
+    }
+
+    .garnish-image > img{
+        width: 100%;
     }
 
     .awards {
