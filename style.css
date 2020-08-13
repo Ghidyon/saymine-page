@@ -247,6 +247,95 @@ a {
     animation: imagechanger 1.7s linear;
 }
 
+#click1, #click2, #click3 {
+    display: none;
+}
+
+#purple-text1 {
+    margin-left: 2rem;
+}
+
+#purple-text1, #purple-text2 {
+    margin-right: 3.5rem;
+}
+
+#purple-text1, #purple-text2, #purple-text3 {
+    font-size: 1rem;
+    opacity: .3;
+    font-weight: 700;
+}
+
+.click-para {
+    margin-left: 2rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.click-para::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: -1px;
+    background-color: var(--purpleColor);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s ease;
+}
+
+.pick1, .pick2, .pick3 {
+    display: none;
+    width: 360px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#click1:checked + #purple-text1 {
+    color: var(--purpleColor);
+    opacity: 1;
+}
+
+#click2:checked + #purple-text2 {
+    color: var(--purpleColor);
+    opacity: 1;
+}
+
+#click3:checked + #purple-text3 {
+    color: var(--purpleColor);
+    opacity: 1;
+}
+
+#click1:checked ~ .click-para .pick1 {
+    display: block;
+}
+
+#click2:checked ~ .click-para .pick2 {
+    display: block;
+}
+
+#click3:checked ~ .click-para .pick3 {
+    display: block;
+}
+
+#click1:checked ~ .click-para::before
+#click2:checked ~ .click-para::before
+#click3:checked ~ .click-para::before {
+    transform: scaleY(1);
+    left: -1px;
+}
+
+#click1:checked ~ .hanged #hanged1 {
+
+}
+
+#click2:checked ~ .hanged #hanged2 {
+
+}
+
+#click3:checked ~ .hanged #hanged3 {
+
+}
 /* Awards Section */
 .discover {
     margin-top: 15rem;
@@ -394,11 +483,6 @@ a {
     margin: auto;
 }
 
-.side-padding {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-}
-
 .mr-6 {
     margin-right: 7rem;
 }
@@ -514,7 +598,6 @@ a {
 
 .big-text, .big-text1  {
     font-family: 'Playfair Display', serif;
-    font-size: 3.3rem;
     font-weight: 700;    
 }
 
@@ -526,6 +609,10 @@ a {
     font-size: 1.28rem;
     font-weight: normal;
     cursor: pointer;
+}
+
+.h8 {
+    font-size: 1rem;
 }
 
 .h7,
@@ -712,120 +799,40 @@ a {
     }
 
     .press-images a {
-        margin-right: 1rem;
+        margin-right: 1.3rem;
     }
 
     .d-breakout {
         display: none;
     }
 
-    .unleash-breakout {
-        display: none;
-    }
-        
-    .footer-container {
-        padding: 3.5rem 6rem;
+    .big-text {
+        font-size: 3.3rem;
+        line-height: 1.35;
+        max-width: 450px;
     }
 
-    .footer-image {
-        margin-left: 0;
-    }
-
-    .footer-image img {
-        width: 85px;
-    }
-
-    .footer-f {
-        padding: 0;
-    }
-
-    .footer-footer {
-        flex-direction: row;
-        justify-content: center;
-        padding: 2.5rem 6rem;
-    }
-
-    .footer-footer p {
+    .small-text {
         font-size: 1rem;
-    }
-
-    .footer-icons {
-        font-size: 1.3rem;
-    }
-
-    .footer-icons a {
-        margin-left: 1rem;
-    }
-
-    .icon-border {
-        width: 20%;
-        border: none;
-        padding: 0;
-    }
-
-    .mg-y {
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .mt-16 {
-        margin-top: 7.5rem!important;
-    }
-
-    .pd-top {
-        margin: 0;
-    }
-
-    .header-container {
-        margin-left: 6rem;
-    }
-
-    .header-text {
-        font-size: 1.2rem;
-    }
-
-    .header-big-text {
-        font-family: 'Playfair Display', serif;
-        font-size: 2.9rem;
-        width: 400px;
-    }
-
-    .top-pd {
-        margin-top: 2.5rem;
-    }
-
-    .pl-6 > img {
-        height: 350px; 
-    }
-    
-    .w-90 {
-        width: 100%;
-        font-size: 1.11rem;
-    }
-    
-    .ostrich-tablet {
-        display: block;
-    }
-
-    .ostrich-desktop {
-        display: none;
-    }
-
-    .ostrich-mobile {
-        display: none;
-    }
-
-    .values {
-        margin-left: 6rem;
+        max-width: 480px;
     }
 
     .cards-container {
-        height: 450px;
+        height: 440px;
+    }
+
+    .side-padding {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
 
     .card-box {
-        width: 370px;        
+        width: 320px;        
+    }
+
+    .card-image {
+        align-self: center;
+        width: 160px;
     }
 
     .py-6 {
@@ -833,14 +840,14 @@ a {
     }
 
     .card-h {
-        font-size: 1.4rem !important;
+        font-size: 1.2rem !important;
     }
 
     .card-para {
-        width: 80%;
-        font-size: 1.1rem !important;
+        width: 85%;
+        font-size: 1rem !important;
     }
-
+    
     .mt-12 {
         margin-top: 15rem;
     }
@@ -851,9 +858,15 @@ a {
     }
 
     .garnish-image > img {
-        width: 75%;
+        width: 100%;
     }
 
+    .big-text {
+        font-size: 3.3rem;
+        line-height: 1.35;
+        max-width: 550px;
+    }
+   
     .big-text1 {
         font-size: 2.4rem;
     }
@@ -953,14 +966,251 @@ a {
     .unleash-breakout {
         display: none;
     }
+        
+    .footer-container {
+        padding: 3.5rem 6rem;
+    }
 
-    .big-text {
-        line-height: 1.35;
-        max-width: 450px;
+    .footer-image {
+        margin-left: 0;
+    }
+
+    .footer-image img {
+        width: 85px;
+    }
+
+    .footer-f {
+        padding: 0;
+    }
+
+    .footer-footer {
+        flex-direction: row;
+        justify-content: center;
+        padding: 2.5rem 6rem;
+    }
+
+    .footer-footer p {
+        font-size: 1rem;
+    }
+
+    .footer-icons {
+        font-size: 1.3rem;
+    }
+
+    .footer-icons a {
+        margin-left: 1rem;
+    }
+
+    .icon-border {
+        width: 20%;
+        border: none;
+        padding: 0;
+    }
+
+    .mg-y {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mt-16 {
+        margin-top: 7.5rem !important;
+    }
+
+    .pd-top {
+        margin: 0;
+    }
+
+    .header-container {
+        margin-left: 6rem;
+    }
+
+    .header-text {
+        font-size: 1.2rem;
+    }
+
+    .header-big-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.9rem;
+        width: 400px;
+    }
+
+    .top-pd {
+        margin-top: 2.5rem;
+    }
+
+    .pl-6 > img {
+        height: 350px; 
+    }
+    
+    .w-90 {
+        width: 100%;
+        font-size: 1.11rem;
+    }
+    
+    .ostrich-tablet {
+        display: block;
+    }
+
+    .ostrich-desktop {
+        display: none;
+    }
+
+    .ostrich-mobile {
+        display: none;
+    }
+
+    .cards-container {
+        height: 450px;
+    }
+
+    .side-padding {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .card-box {
+        width: 370px;        
+    }
+
+    .card-image {
+        align-self: center;
+        width: 190px;
+    }
+
+    .py-6 {
+        padding: 1rem 0;
+    }
+
+    .card-h {
+        font-size: 1.4rem !important;
+    }
+
+    .card-para {
+        width: 80%;
+        font-size: 1.1rem !important;
+    }
+    
+    .values {
+        margin-left: 6rem;
+    }
+
+    .mt-12 {
+        margin-top: 15rem;
+    }
+
+    .garnish-image {
+        position: absolute;
+        left: 48%;
+    }
+
+    .garnish-image > img {
+        width: 75%;
+    }
+
+    .big-text1 {
+        font-size: 2.4rem;
+    }
+
+    .awards {
+        width: 75%;
+        margin: 3rem auto;
+    }
+
+    .award {
+        padding: .85rem 2rem .75rem 1.2rem; 
+    }
+
+    .bg-award {
+        font-size: 1.6rem;
+    }
+
+    .mini-text {
+        font-size: .59rem !important;
+    }
+
+    .text-purple {
+        font-size: 1rem;
+    }
+
+    .statistics > div {
+        margin-right: 2.5rem;
     }
 
     .small-text {
-        max-width: 100%;
+        font-size: 1.1rem;
+        max-width: 550px;
+    }
+    
+    .bold-text {
+        font-size: 2.3rem;   
+    }
+
+    .stats-text {
+        font-size: 1rem;
+        width: 9.5rem;
+    }
+
+    .frames {
+        height: 1320px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3.5rem 0;
+    }
+
+    .frame-container {
+        width: 500px;
+        height: 615px;
+    }
+
+    .frame-container2 {
+        
+        width: 500px;
+        height: 670px;
+    }
+
+    .bold {
+        font-size: 1.2rem;
+        max-width: 200px
+    }
+
+    .verified-text {
+        max-width: 238px;
+        font-size: 1rem;
+    }
+
+    .mb-4-5 {
+        margin-bottom: -.5rem !important;
+    }
+
+    .m-top {
+        margin-top: 2rem;
+    }
+
+    .mr-3-5 {
+        margin-right: 1.5rem;
+    }
+
+    .border-transparent {
+        height: 450px;
+    }
+
+    .d-breakout {
+        display: none;
+    }
+
+    .unleash {
+        margin: 0 auto;
+    }
+
+    .unleash-text {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .unleash-breakout {
+        display: none;
     }
 
     .footer-container {
