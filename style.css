@@ -270,10 +270,7 @@ a {
 }
 
 .click-para {
-    margin-top: 1.5rem;
-    margin-left: 2rem;
     position: relative;
-    padding-left: 1.3rem;
 }
 
 .pick1, .pick2, .pick3 {
@@ -1017,6 +1014,25 @@ a {
     .mg-y {
         margin: 4.5rem 0 0 0;
     }    
+
+    #purple-text1 {
+        margin-left: 0;
+    }
+
+    #purple-text1, #purple-text2, #purple-text3 {
+        font-size: .8rem;
+        width: 90px;
+        line-height: 1.8;
+    }
+
+    #purple-text1, #purple-text2 {        
+        margin-right: 2rem;
+    }
+
+    .click-para {
+        margin-top: 1.5rem;
+        padding-left: 1.3rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1190,7 +1206,7 @@ a {
     .click-container {
         width: 100%;
     }
-    
+
     .awards {
         width: 75%;
         margin: 3rem auto;
@@ -1364,6 +1380,25 @@ a {
 
     .mg-y {
         margin: 0;
+    }
+
+    #purple-text1, #purple-text2, #purple-text3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #purple-text1, #purple-text2 {        
+        margin-right: 3.5rem;
+    }
+
+    #purple-text1 {
+        margin-left: 2rem;
+    }
+
+    .click-para {
+        margin-top: 1.5rem;
+        margin-left: 2rem;    
+        padding-left: 1.3rem;
     }
 }
 
