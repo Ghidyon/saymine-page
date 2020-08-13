@@ -422,7 +422,7 @@ a {
 }
 
 .unleash-image {
-    width: 430px;
+    width: 350px;
     padding-left: 6rem;
     padding-top: 3.5rem;
     overflow: hidden;
@@ -947,18 +947,18 @@ a {
     }
 
     .unleash {
+        width: 350px;
         margin: 0 auto;
     }
 
     .unleash-text {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .big-text2 {        
-        font-size: 2.9rem;
+        font-size: 2rem;
         line-height: 1.35;
-        max-width: 400px;
+        max-width: 280px;
     }
     
     .small-text {
@@ -967,26 +967,17 @@ a {
     }
 
     .mt-8{
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 
     .mt-8 > img {
-        width: 400px;
+        width: 350px;
     }
 
     .unleash-breakout {
         display: none;
     }
-     
-
-
-
-
-
-
-
-
-
+    
     .unleash-breakout {
         display: none;
     }
