@@ -275,9 +275,7 @@ a {
 
 .pick1, .pick2, .pick3 {
     display: none;
-    width: 360px;
     text-align: left;
-    font-size: .99rem;
 }
 
 .pick1::before, .pick2::before, .pick3::before {
@@ -286,7 +284,6 @@ a {
     position: absolute;
     width: 2px;
     height: 100%;
-    left: 1px;
     background-color: var(--purpleColor);
     transform: scaleY(1);
     transform-origin: top;
@@ -367,12 +364,15 @@ a {
     grid-template-columns: .25fr .25fr .25fr;
     place-items: center;
     justify-content: center;
-    background-color: #f9f9f9;
     padding: 3rem 0;
 }
 
 .statistics > div {
     margin-right: 2rem;
+}
+
+.statistics > div:last-child {
+    margin-right: 0;
 }
 
 .bold-text {
@@ -412,9 +412,13 @@ a {
     color: rgba(43,42,53,.8);
 }
 
+.text-container {
+    width: 350px;
+    margin: 0 auto;
+}
 /* Unleash Section */
 .unleash {
-    padding: 13rem 0;
+    padding: 5rem 0;
 }
 
 .unleash-image {
@@ -811,23 +815,29 @@ a {
     }
 
     .big-text1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .discover {
         margin-top: 7rem;
+        width: 350px;
     }
 
     .click-container {
         width: 350px;
     }
+
     .awards {
         width: 75%;
         margin: 3rem auto;
     }
 
     .award {
-        padding: .85rem 2rem .75rem 1.2rem; 
+        padding: .85rem 2.5rem .75rem 1.2rem; 
+    }
+
+    .left-align {
+        width: 180px;
     }
 
     .bg-award {
@@ -842,21 +852,33 @@ a {
         font-size: 1rem;
     }
 
+    .statistics {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+        opacity: .3;
+    }
+
     .statistics > div {
         margin-right: 2.5rem;
     }
 
-    .statistics > div:last-child {
-        margin-right: 0;
+    .stats {
+        flex-direction: column;
+        margin-left: 2.5rem;
     }
 
     .bold-text {
-        font-size: 2.3rem;   
+        font-size: 2.3rem;
+        margin-bottom: -.3rem;
     }
 
     .stats-text {
-        font-size: .9rem;
-        width: 9rem;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 100%;
     }
 
     .frames {
@@ -868,13 +890,12 @@ a {
     }
 
     .frame-container {
-        width: 500px;
+        width: 350px;
         height: 615px;
     }
 
     .frame-container2 {
-        
-        width: 500px;
+        width: 350px;
         height: 670px;
     }
 
@@ -883,16 +904,21 @@ a {
         max-width: 200px
     }
 
-    .verified {
+    .verify {
         display: grid;
         grid-template-columns: .4fr;
-        place-content: center;    
+        place-content: center;
         background-color: #f9f9f9;
         padding: 6rem 0;
     }
 
+    .text-container {
+        width: 350px;
+        margin: 0 auto;
+    }
+
     .verified-text {
-        max-width: 238px;
+        max-width: 100%;
         font-size: 1rem;
     }
 
@@ -901,7 +927,7 @@ a {
     }
 
     .m-top {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .mr-3-5 {
@@ -1032,6 +1058,15 @@ a {
     .click-para {
         margin-top: 1.5rem;
         padding-left: 1.3rem;
+    }
+
+    .pick1, .pick2, .pick3 {
+        width: 225px;
+        font-size: .85rem;
+    }
+
+    .pick1::before, .pick2::before, .pick3::before {
+        left: 0;
     }
 }
 
@@ -1201,6 +1236,7 @@ a {
 
     .discover {
         margin-top: 7rem;
+        width: 100%;
     }
 
     .click-container {
@@ -1216,6 +1252,10 @@ a {
         padding: .85rem 2rem .75rem 1.2rem; 
     }
 
+    .left-align {
+        width: 100%;
+    }
+
     .bg-award {
         font-size: 1.6rem;
     }
@@ -1228,21 +1268,33 @@ a {
         font-size: 1rem;
     }
 
+    .statistics {
+        display: grid;
+        grid-template-columns: .25fr .25fr .25fr;
+        place-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+        padding: 3rem 0;
+        opacity: 1;
+    }
+
     .statistics > div {
         margin-right: 2.5rem;
     }
 
-    .statistics > div:last-child {
-        margin-right: 0;
+    .stats {
+        flex-direction: row;
+        margin-left: 0;
     }
 
     .bold-text {
-        font-size: 2.3rem;   
+        font-size: 2.3rem;
+        margin-top: -1.3rem;
     }
 
-    .stats-text {
-        font-size: .9rem;
-        width: 9rem;
+    .stats-text {       
+        font-weight: 500;
+        width: 9.5rem;
     }
 
     .frames {
@@ -1271,7 +1323,7 @@ a {
     
     .verified {
         display: grid;
-        grid-template-columns: .4fr .4fr;
+        grid-template-columns: 4fr 4fr;
         place-content: center;    
         background-color: #f9f9f9;
         padding: 6rem 0;
@@ -1334,6 +1386,10 @@ a {
         width: 600px;
     }
 
+    .unleash {
+        padding: 13rem 0;
+    }
+
     .unleash-breakout {
         display: none;
     }
@@ -1384,21 +1440,36 @@ a {
 
     #purple-text1, #purple-text2, #purple-text3 {
         font-size: 1rem;
-        width: 100%;
-    }
-
-    #purple-text1, #purple-text2 {        
-        margin-right: 3.5rem;
     }
 
     #purple-text1 {
-        margin-left: 2rem;
+        margin-right: 3.5rem;
+        margin-left: 0.5rem;
+        width: 220px;
+    }
+
+    #purple-text2 {
+        margin-right: 3.5rem;
+        width: 130px;
+    }
+
+    #purple-text3 {
+        width: 250px;
     }
 
     .click-para {
         margin-top: 1.5rem;
-        margin-left: 2rem;    
+        margin-left: .5rem;    
         padding-left: 1.3rem;
+    }
+
+    .pick1, .pick2, .pick3 {
+        width: 360px;
+        font-size: .99rem;
+    }
+
+    .pick1::before, .pick2::before, .pick3::before {
+        left: 1px;
     }
 }
 
