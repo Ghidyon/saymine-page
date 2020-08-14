@@ -608,6 +608,7 @@ a {
 
 .h7,
 .small-text,
+.small-text1,
 .btn-purple,
 .btn-outline-purple,
 .btn-purple1,
@@ -964,9 +965,9 @@ a {
         max-width: 280px;
     }
     
-    .small-text {
+    .small-text, .small-text1 {
         font-size: 1rem;
-        max-width: 100%;
+        width: 100%;
     }
 
     .mt-8{
@@ -1160,12 +1161,17 @@ a {
     .big-text {
         font-size: 3rem;
         line-height: 1.35;
-        max-width: 550px;
+        width: 500px;
     }
 
     .small-text {
         font-size: 1rem;
-        max-width: 480px;
+        width: 450px;
+    }
+
+    .small-text1 {
+        font-size: 1rem;
+        width:  100%;
     }
 
     .cards-container {
@@ -1636,6 +1642,14 @@ a {
     .bold {
         font-size: 1.2rem;
         max-width: 200px
+    }
+
+    .verify {
+        display: none;
+        grid-template-columns: .4fr;
+        place-content: center;
+        background-color: #f9f9f9;
+        padding: 6rem 0;
     }
 
     .verified-text {
