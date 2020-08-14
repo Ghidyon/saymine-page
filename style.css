@@ -35,14 +35,32 @@ a {
 }
 
 /* Header */
-.header-text {
+.header-container {
+    margin: 0;
+    width: 100%;
+}
+
+.header-text {    
     font-family: 'Playfair Display', serif;
+    font-size: .8rem;
+    padding-bottom: 0;
 }
 
 .header-big-text {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     line-height: 1.35;
+    font-size: 2rem;
+    width: 270px;
+}
+
+.pl-6 {
+    padding-top: 0rem;
+    margin-left: -4rem;
+}
+
+.pl-6 > img {
+    height: 300px;
 }
 
 .ostrich-desktop {
@@ -74,47 +92,111 @@ a {
     display: none;
 }
 
-.press-link {
-    margin-right: .5rem;
-}
-
 .press-link:last-child {
     margin-right: 0;
 }
 
+.press-link {
+    margin-right: 1rem;
+}
+
+.press-link:nth-child(3){
+    margin-right: 0;
+}
+
+.intel {
+    width: 60px;
+}
+
+.business {
+    width: 100px;
+}
+
+.venture {
+    width: 120px;
+}
+
+/* Values Section */
+.values {
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* Cards Section */
 .cards-container {
     display: flex;
+    flex-direction: column;
 }
 
 .card-image {
     align-self: center;
-    width: 190px;
+    width: 160px;
 }
 
 .card-h {
     font-family: "Playfair Display", serif;
     font-weight: 700;
+    font-size: 1.15rem !important;
 }
 
 .card-para {
-    font-size: 1.1rem;
     margin: 0 auto;
     opacity: .8;
     line-height: 1.6;
+    width: 90%;
+    font-size: 1rem !important;
 }
 
 .card-box {
-    width: 200px;
+    width: 350px;
     border: 0 !important;
     border-radius: 10px !important;
     box-shadow: 0 2px 12px 0 #eaeaea;
 }
 
+.side-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.py-6 {
+    padding: 3rem 0;
+}
+
 /* How it works section */
+.mt-12 {
+    margin-top: 15rem;
+}
+
 .how-it-works {
     position: relative;
-    width: 100%;    
-    overflow: hidden;
+    width: 350px;    
+    overflow: visible;
+}
+
+.garnish-image {
+    position: absolute;
+    left: 25%;
+    top: 5px;
+    width: 280px;
+}
+
+.garnish-image > img {
+    width: 100%;
+}
+
+.big-text {
+    font-size: 2rem;
+    line-height: 1.35;
+    width: 330px;
+}    
+
+.small-text {
+    font-size: 1rem;
+}
+
+.opacity {        
+    font-size: .8rem;
 }
 
 /* Data section */
@@ -251,6 +333,10 @@ a {
     animation: imagechanger 1.7s linear;
 }
 
+.click-container {
+    width: 350px;
+}
+
 #click1, #click2, #click3 {
     display: none;
 }
@@ -342,9 +428,10 @@ a {
     100% {transform: scaleY(1);}
 }
 /* Awards Section */
-/* .discover {
-    margin-top: 15rem;
-} */
+.discover {
+    margin-top: 7rem;
+    width: 350px;
+}
 
 .awards {
     width: 60%;
@@ -488,6 +575,19 @@ a {
     margin: auto;
 }
 
+.w-90 {
+    width: 300px;
+    font-size: 1rem;
+}
+
+.top-pd {
+    margin-top: 3.5rem;
+}
+
+.pd-top {
+    margin-top: 3rem;
+}
+
 .mr-3-5 {
     margin-right: 2rem;
 }
@@ -518,6 +618,10 @@ a {
 
 .mt-2-1 {
     margin-top: 2.1rem;
+}
+
+.mt-16 {
+    margin-top: 6rem !important;
 }
 
 .pt-2-5 {
@@ -571,6 +675,11 @@ a {
     transition: opacity 0.15s ease-in-out;
 }
 
+.btn-purple1 {
+    font-size: 1rem;
+    padding: .7rem 2rem .75rem 2rem;
+}
+
 .btn-purple {
     padding: .7rem 1.6rem .75rem 1.6rem;
 }
@@ -611,7 +720,6 @@ a {
 .small-text1,
 .btn-purple,
 .btn-outline-purple,
-.btn-purple1,
 .purple,
 .text-color,
 .stats-text,
@@ -651,14 +759,11 @@ a {
 .icon-size {
     font-size: 1.65rem;
 }
+
 /* Responsive */
 @media screen and (min-width: 576px) {
-    .btn-purple1, .btn-purple2 {
+    .btn-purple2 {
         font-size: 1rem;
-    }
-
-    .btn-purple1 {
-        padding: .7rem 2rem .75rem 2rem;
     }
 
     .btn-purple2 {
@@ -735,100 +840,9 @@ a {
     .press-link {
         margin-right: 2rem;
     }
-
-    .intel {
-        width: 60px;
-    }
-
-    .business {
-        width: 100px;
-    }
-
-    .venture {
-        width: 120px;
-    }
     
-    .values {
-        width: 350px;
-    }
-
-    .big-text {
-        font-size: 2rem;
-        line-height: 1.35;
-        width: 330px;
-    }    
-
-    .small-text {
-        font-size: 1rem;
-    }
-
-    .cards-container {
-        flex-direction: column;
-    }
-
-    .side-padding {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .card-box {
-        width: 350px;        
-    }
-
-    .card-image {
-        align-self: center;
-        width: 160px;
-    }
-
-    .py-6 {
-        padding: 3rem 0;
-    }
-
-    .card-h {
-        font-size: 1.15rem !important;
-    }
-
-    .card-para {
-        width: 90%;
-        font-size: 1rem !important;
-    }
-    
-    .mt-12 {
-        margin-top: 15rem;
-    }
-
-    .how-it-works {
-        position: relative;
-        width: 350px;    
-        overflow: visible;
-    }
-
-    .garnish-image {
-        position: absolute;
-        left: 25%;
-        top: 5px;
-        width: 280px;
-    }
-
-    .garnish-image > img {
-        width: 100%;
-    }
-
-    .opacity {        
-        font-size: .8rem;
-    }
-
     .big-text1 {
         font-size: 2rem;
-    }
-
-    .discover {
-        margin-top: 7rem;
-        width: 350px;
-    }
-
-    .click-container {
-        width: 350px;
     }
 
     .awards {
@@ -1059,12 +1073,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .btn-purple1, .btn-purple2 {
+    .btn-purple2 {
         font-size: 1rem;
-    }
-
-    .btn-purple1 {
-        padding: .7rem 2rem .75rem 2rem;
     }
 
     .btn-purple2 {
@@ -1131,6 +1141,10 @@ a {
     }
 
     .press-link {
+        margin-right: 3.5rem;
+    }
+
+    .press-link:nth-child(3){
         margin-right: 3.5rem;
     }
 
@@ -1327,6 +1341,10 @@ a {
         place-content: center;    
         background-color: #f9f9f9;
         padding: 6rem 0;
+    }
+
+    .verify {
+        display: none;
     }
 
     .verified-text {
@@ -1565,7 +1583,9 @@ a {
     }
     
     .values {
-        margin-left: 6rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%;
     }
 
     .mt-12 {
@@ -1642,14 +1662,6 @@ a {
     .bold {
         font-size: 1.2rem;
         max-width: 200px
-    }
-
-    .verify {
-        display: none;
-        grid-template-columns: .4fr;
-        place-content: center;
-        background-color: #f9f9f9;
-        padding: 6rem 0;
     }
 
     .verified-text {
@@ -1787,6 +1799,7 @@ a {
 
     .values {
         margin-left: 0;
+        width: 100%;
     }
 
     .d-breakout {
