@@ -175,14 +175,13 @@ a {
 
 .how-it-works {
     position: relative;
-    width: 300px;    
-    overflow: visible;
+    width: 300px;
 }
 
 .garnish-image {
     position: absolute;
     left: 25%;
-    top: 5px;
+    top: 7px;
     width: 280px;
 }
 
@@ -724,7 +723,7 @@ a {
 }
 
 .mt-6 {
-    margin-top: 6rem;
+    margin-top: 6rem; 
 }
 
 .mt-4-6 {
@@ -898,6 +897,10 @@ a {
         margin-bottom: -.5rem !important;
     }
 
+    .mt-12 {
+        margin-top: 15rem !important;
+    }
+    
     .m-top {
         margin-top: 1rem;
     }
@@ -984,7 +987,12 @@ a {
     }
         
     .how-it-works {
-        width: 350px; 
+        width: 350px;
+        position: relative;
+    }
+
+    .mt-6 {
+        margin-top: 6rem;
     }
 
     .big-text1 {
