@@ -36,8 +36,8 @@ a {
 
 /* Header */
 .header-container {
-    margin: 0 auto;
-    width: 350px;
+    margin: 0;
+    width: 100%;
 }
 
 .header-text {    
@@ -52,6 +52,10 @@ a {
     line-height: 1.35;
     font-size: 2rem;
     width: 270px;
+}
+
+.pd-top {
+    margin-top: 3rem;
 }
 
 .pl-6 {
@@ -690,10 +694,6 @@ a {
     margin-top: 3.5rem;
 }
 
-.pd-top {
-    margin-top: 3rem;
-}
-
 .mr-3-5 {
     margin-right: 2rem;
 }
@@ -895,9 +895,15 @@ a {
     .border-transparent {
         height: 450px;
     }
-
+    
     .pd-top {
-        margin-top: 3.5rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    .w-90 {
+        width: 310px;
+        font-size: 1rem;
     }
     
     .pt-2-5 {
@@ -905,9 +911,9 @@ a {
     }
 
     .header-container {
-        margin-left: auto;
-        margin-right: 1rem;
-        width: 540px;
+        margin-left: 0;
+        margin-right: 0rem;
+        width: 100%;
     }
 
     .header-text {
@@ -920,19 +926,14 @@ a {
         width: 270px;
     }
 
-    .w-90 {
-        width: 100%;
-        font-size: 1rem;
-    }
-
     .top-pd {
         margin-top: 3.5rem;
     }
 
     .pl-6 {
         padding-top: 1rem;
-        width: 300px;
-        margin-left: -3rem;
+        width: 100%;
+        margin-left: -7.5rem;
     }
 
     .pl-6 > img {
@@ -1062,8 +1063,8 @@ a {
 
     .pl-6 {        
         padding-top: 0;
-        width: 400px;
-        margin-left: 0;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     .pl-6 > img {
