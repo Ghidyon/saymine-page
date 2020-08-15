@@ -690,9 +690,6 @@ a {
 }
 
 /* Utilities */
-.bd {
-    border: 1px solid sienna;
-}
 .border-transparent {
     border: 1px solid transparent;
 }
