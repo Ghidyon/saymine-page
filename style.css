@@ -191,7 +191,7 @@ a {
 }
 
 .big-text {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.35;
     width: 300px;
 }    
@@ -352,11 +352,11 @@ a {
 }
 
 #purple-text1, #purple-text2 {
-    margin-right: 2rem;
+    margin-right: .7rem;
 }
 
 #purple-text1, #purple-text2, #purple-text3 {
-    font-size: .8rem;
+    font-size: .7rem;
     width: 90px;
     line-height: 1.8;
     opacity: .3;
@@ -454,7 +454,7 @@ a {
 }
 
 .award {
-    padding: .85rem 2.5rem .75rem 1.2rem;
+    padding: .85rem 1.2rem .75rem 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -810,13 +810,17 @@ a {
 
 .opacity {
     opacity: .4;    
-    font-size: 1.1rem;
+    font-size: .7rem;
     font-family: 'Playfair Display', serif;
 }
 
 .big-text, .big-text1, .big-text2  {
     font-family: 'Playfair Display', serif;
     font-weight: 700;    
+}
+
+.big-text1 {
+    font-size: 1.8rem;
 }
 
 .border-purple {
