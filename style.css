@@ -1382,11 +1382,12 @@ a {
     }
 
     .fr1 {
-        height: 645px;
+        height: 655px;
     }
 
     .fr2 {
         height: 270px;
+	margin-bottom: -1rem;
     }
 
     .fr3 {
@@ -1526,13 +1527,13 @@ a {
     }
 
     #purple-text1 {
-        margin-right: 2.5rem;
+        margin-right: 2rem;
         margin-left: 0.5rem;
         width: 220px;
     }
 
     #purple-text2 {
-        margin-right: 2.5rem;
+        margin-right: 2rem;
         width: 130px;
     }
 
