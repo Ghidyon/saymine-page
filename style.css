@@ -526,10 +526,12 @@ a {
 
 .fr1 {
     height: 625px;
+    margin-bottom: 2rem;
 }
 
 .fr2 {
     height: 225px;
+    margin-bottom: 2rem;
 }
 
 .fr3 {
@@ -1002,6 +1004,11 @@ a {
 
     .frame-container2 {
         width: 350px;
+    }
+    
+    .fr2 {
+        height: 225px;
+        margin-bottom: 0rem;
     }
 
     .mt-8 > img {
