@@ -1013,13 +1013,11 @@ a {
     .frame-container2 {
         width: 350px;
     }
-	
-	
+    
     .fr1 {
-   	height: 625px;
-   	margin-bottom: 0rem;
-     }
-
+        height: 625px;
+        margin-bottom: 0rem;
+    }
 
     .fr2 {
         height: 225px;
@@ -1103,7 +1101,6 @@ a {
         width: 350px;
         margin: 0 auto;
     }
-
     
     .icon-border {
         text-align: center;
@@ -1358,13 +1355,14 @@ a {
     }
 
     .bold-text {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         margin-top: -1.3rem;
     }
 
-    .stats-text {       
+    .stats-text { 
+        font-size: .9rem;      
         font-weight: 500;
-        width: 9.5rem;
+        width: 8.5rem;
     }
 
     .frames {
@@ -1387,7 +1385,7 @@ a {
 
     .fr2 {
         height: 230px;
-	margin-bottom: -1rem;
+	    margin-bottom: -1rem;
     }
 
     .fr3 {
@@ -1523,7 +1521,7 @@ a {
     }
 
     #purple-text1, #purple-text2, #purple-text3 {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     #purple-text1 {
@@ -1992,9 +1990,7 @@ a {
     
     .fr1 {
         height: 680px;
-    }
-
-    
+    }    
 
     .border-transparent {
         height: 620px;
@@ -2025,7 +2021,7 @@ a {
 
     .fr2 {
         height: 250px;
-    } 
+    }
     
     .verified-text {
         max-width: 330px !important;
