@@ -505,7 +505,6 @@ a {
 
 /* Frames Section */
 .frames {
-    height: 1300px;
     flex-direction: column;
     align-items: center;
     margin: 3.5rem 0 5rem;
@@ -513,13 +512,11 @@ a {
 
 .frame-container {
     width: 300px;
-    height: 630px;
     margin: 0;
 }
 
 .frame-container2 {
     width: 300px;
-    height: 750px;
     margin: 0;
 }
 
@@ -981,7 +978,6 @@ a {
     }
 
     .frames {
-        height: 1390px;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -990,12 +986,10 @@ a {
     
     .frame-container {
         width: 350px;
-        height: 620px;
     }
 
     .frame-container2 {
         width: 350px;
-        height: 750px;
     }
 
     .mt-8 > img {
@@ -1340,7 +1334,6 @@ a {
     }
 
     .frames {
-        height: 1455px;
         flex-direction: column;
         align-items: center;
         margin: 3.5rem 0;
@@ -1348,12 +1341,10 @@ a {
 
     .frame-container {
         width: 500px;
-        height: 660px;
     }
 
     .frame-container2 {        
         width: 500px;
-        height: 750px;
     }
 
     .bold {
@@ -1668,7 +1659,6 @@ a {
     }
 
     .frames {
-        height: 1320px;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
