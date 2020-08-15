@@ -1013,11 +1013,13 @@ a {
     .frame-container2 {
         width: 350px;
     }
-
+	
+	
     .fr1 {
-	width: 615px;
-	margin-bottom: —2rem;
-    }
+   	height: 605px;
+   	margin-bottom: -1rem;
+     }
+
 
     .fr2 {
         height: 225px;
