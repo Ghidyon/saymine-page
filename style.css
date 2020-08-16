@@ -34,6 +34,22 @@ a {
     text-decoration: none !important;
 }
 
+/* Navbar */
+#navbarContent {
+    background-image: url(images/mine-menu-garnish.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 23%;
+    background-size: 50%;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.icon-size {
+    font-size: 1.2rem;
+}
+
 /* Header */
 .header-container {
     margin: 0;
@@ -754,6 +770,8 @@ a {
 .text-color {
     color: #2b2a35;
     font-weight: 500;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif ;
 }
 
 .text-color:hover:not(.purple) {
@@ -765,6 +783,8 @@ a {
 .purple {    
     color: var(--purpleColor);
     font-weight: 600;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
 }
 
 .purple:hover {
@@ -844,9 +864,7 @@ a {
 
 .h7,
 .btn-purple,
-.btn-outline-purple,
-.purple,
-.text-color {
+.btn-outline-purple {
     font-size: 1.1rem;
 }
 
@@ -880,11 +898,7 @@ a {
     font-weight: bold;
 }
 
-.icon-size {
-    font-size: 1.65rem;
-}
-
-/* Responsive */
+/* Responsiveness */
 @media screen and (min-width: 576px) {
     .mt-16 {
         margin-top: 6rem !important;
@@ -1105,6 +1119,14 @@ a {
     }
 
 @media screen and (min-width: 768px) {
+    .icon-size {
+        font-size: 1.65rem;
+    }
+    
+    .navbar-brand img {
+        width: 100px;
+    }
+
     .btn-purple2 {
         font-size: 1rem;
     }
@@ -1553,6 +1575,16 @@ a {
 }
 
 @media screen and (min-width: 992px) {
+    #navbarContent {
+        background-image: none;
+    }
+    
+    .purple,
+    .text-color {
+        font-size: 1.1rem;
+        font-family: "Lato", sans-serif;
+    }
+
     .btn-purple1 {
         font-size: 1.1rem;
         padding: .7rem 2.4rem .75rem 2.4rem;
