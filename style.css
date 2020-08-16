@@ -50,6 +50,10 @@ a {
     font-size: 1.2rem;
 }
 
+.ml-navbar {
+    margin-left: .95rem;
+}
+
 /* Header */
 .header-container {
     margin: 0;
@@ -59,6 +63,7 @@ a {
 .header-text {    
     font-family: 'Playfair Display', serif;
     font-size: .8rem;
+    font-weight: lighter;
     padding-bottom: 0;
 }
 
@@ -690,13 +695,13 @@ a {
 }    
 
 .cookie {
-    width: 130px;
+    width: 110px;
     text-align: center;
     background-color: black;
     color: #fff;
     margin-left: 3rem;
-    font-size: 1.1rem;
-    padding: .5rem .3rem;
+    font-size: 1rem;
+    padding: .5rem .1rem;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -1578,7 +1583,11 @@ a {
     #navbarContent {
         background-image: none;
     }
-    
+       
+    .navbar-brand img {
+        width: 115px;
+    }
+
     .purple,
     .text-color {
         font-size: 1.1rem;
@@ -1614,7 +1623,7 @@ a {
     .header-big-text {
         font-family: 'Playfair Display', serif;
         font-size: 2.9rem;
-        width: 400px;
+        width: 390px;
     }
 
     .top-pd {
@@ -1877,7 +1886,8 @@ a {
 
     .header-big-text {
         font-size: 4.7rem;
-        width: 100%;
+        width: 100%;        
+        max-width: 600px;
         padding-bottom: 0;
     }
 
